@@ -470,7 +470,7 @@ Note that underscores should be used in the environment variable names.
 oc -n 599f0a-dev create configmap backup-conf --from-file=./backup-container/config/backup.conf
 oc -n 599f0a-dev label configmap backup-conf app=nrmsurveys-bkup
 
-oc -n 599f0a-dev process -f ./openshift/templates/backup/backup-deploy.json \
+oc -n 599f0a-dev process -f ./openshift/templates/backup/backup-deploy.nrmsurveys.json \
   -p NAME=nrmsurveys-bkup \
   -p IMAGE_NAMESPACE=599f0a-tools \
   -p SOURCE_IMAGE_NAME=nrmsurveys-bkup \
