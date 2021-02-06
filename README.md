@@ -432,6 +432,8 @@ oc -n 599f0a-tools process -f ./openshift/templates/backup/backup-build.json \
 ```bash
 postgres=eaofider-postgresql:5432/eaofider
 postgres=pawslimesurvey-postgresql:5432/pawslimesurvey
+postgres=ddslimesurvey-postgresql:5432/ddslimesurvey
+postgres=waterlimesurvey-postgresql:5432/waterlimesurvey
 
 0 1 * * * default ./backup.sh -s
 0 4 * * * default ./backup.sh -s -v all
