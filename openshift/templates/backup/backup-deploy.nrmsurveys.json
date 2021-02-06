@@ -245,6 +245,24 @@
                     }
                   },
                   {
+                    "name": "WATERLIMESURVEY_POSTGRESQL_USER",
+                    "valueFrom": {
+                      "secretKeyRef": {
+                        "name": "waterlimesurvey-postgresql",
+                        "key": "${DATABASE_USER_KEY_NAME}"
+                      }
+                    }
+                  },
+                  {
+                    "name": "WATERLIMESURVEY_POSTGRESQL_PASSWORD",
+                    "valueFrom": {
+                      "secretKeyRef": {
+                        "name": "waterlimesurvey-postgresql",
+                        "key": "${DATABASE_PASSWORD_KEY_NAME}"
+                      }
+                    }
+                  },
+                  {
                     "name": "FTP_URL",
                     "valueFrom": {
                       "secretKeyRef": {
