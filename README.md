@@ -575,6 +575,12 @@ For customizing the configuration, go to: https://github.com/bcgov/helm-charts/t
 
 Please refer to the [Tips and Tricks](./docs/TipsAndTricks.md) document for solutions to known issues.
 
+To see the ENV values for that backup (for example):
+
+```bash
+oc -n 599f0a-dev set env dc/nrmsurveys-bkup --list
+```
+
 # Getting Help or Reporting an Issue
 
 To report bugs/issues/feature requests, please file an [issue](../../issues).
